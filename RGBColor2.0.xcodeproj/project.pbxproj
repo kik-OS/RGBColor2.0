@@ -58,16 +58,40 @@
 		E4B603C3254D563F00F444FE /* RGBColor2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				E4B603C4254D563F00F444FE /* AppDelegate.swift */,
-				E4B603C6254D563F00F444FE /* SceneDelegate.swift */,
-				E4B603C8254D563F00F444FE /* MainViewController.swift */,
-				E4B603CA254D563F00F444FE /* Main.storyboard */,
+				E4F0BB37254FDDEE00488D7C /* supportFiles */,
+				E4F0BB35254FDDD400488D7C /* viewControllers */,
+				E4F0BB34254FDDBE00488D7C /* storyboards */,
 				E4B603CD254D564400F444FE /* Assets.xcassets */,
-				E4B603CF254D564400F444FE /* LaunchScreen.storyboard */,
-				E4B603D2254D564400F444FE /* Info.plist */,
-				E4B603DA254D5ED000F444FE /* ChangerColorViewController.swift */,
 			);
 			path = RGBColor2.0;
+			sourceTree = "<group>";
+		};
+		E4F0BB34254FDDBE00488D7C /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E4B603CA254D563F00F444FE /* Main.storyboard */,
+				E4B603CF254D564400F444FE /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		E4F0BB35254FDDD400488D7C /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4B603C8254D563F00F444FE /* MainViewController.swift */,
+				E4B603DA254D5ED000F444FE /* ChangerColorViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		E4F0BB37254FDDEE00488D7C /* supportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E4B603C4254D563F00F444FE /* AppDelegate.swift */,
+				E4B603C6254D563F00F444FE /* SceneDelegate.swift */,
+				E4B603D2254D564400F444FE /* Info.plist */,
+			);
+			path = supportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58287L88KM;
-				INFOPLIST_FILE = RGBColor2.0/Info.plist;
+				INFOPLIST_FILE = RGBColor2.0/supportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58287L88KM;
-				INFOPLIST_FILE = RGBColor2.0/Info.plist;
+				INFOPLIST_FILE = RGBColor2.0/supportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="JK5-f9-0bB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="5gr-vN-TWm">
+                        <barButtonItem key="rightBarButtonItem" image="pencil" catalog="system" id="5gr-vN-TWm">
                             <connections>
                                 <segue destination="J4a-y3-jrm" kind="presentation" modalPresentationStyle="fullScreen" id="rpT-ts-tp0"/>
                             </connections>
@@ -134,26 +134,17 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0J-he-1V8">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
-                                                <connections>
-                                                    <action selector="textFieldsAction:" destination="J4a-y3-jrm" eventType="editingDidEnd" id="eYV-Zo-rQz"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="If8-MI-lyR">
                                                 <rect key="frame" x="0.0" y="50" width="60" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
-                                                <connections>
-                                                    <action selector="textFieldsAction:" destination="J4a-y3-jrm" eventType="editingDidEnd" id="u6N-4Z-1o9"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ob-fx-hsq">
                                                 <rect key="frame" x="0.0" y="100" width="60" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
-                                                <connections>
-                                                    <action selector="textFieldsAction:" destination="J4a-y3-jrm" eventType="editingDidEnd" id="KA1-R7-dL9"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -175,13 +166,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hVy-Y7-002" firstAttribute="trailing" secondItem="BA0-Ey-BLq" secondAttribute="trailing" constant="16" id="5sK-aW-YAh"/>
-                            <constraint firstItem="Pfh-Bw-Dd1" firstAttribute="centerY" secondItem="QcL-Oc-amU" secondAttribute="centerY" constant="-100" id="86f-Wl-Cfb"/>
+                            <constraint firstItem="Pfh-Bw-Dd1" firstAttribute="centerY" secondItem="QcL-Oc-amU" secondAttribute="centerY" constant="-100" id="86f-Wl-Cfb">
+                                <variation key="heightClass=compact-widthClass=compact" constant="22"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="31"/>
+                            </constraint>
                             <constraint firstItem="Pfh-Bw-Dd1" firstAttribute="top" secondItem="BA0-Ey-BLq" secondAttribute="bottom" constant="16" id="9q6-U3-Rdk"/>
                             <constraint firstItem="b1l-WY-FU7" firstAttribute="leading" secondItem="hVy-Y7-002" secondAttribute="leading" constant="16" id="H1L-Vi-aUA"/>
                             <constraint firstItem="Pfh-Bw-Dd1" firstAttribute="leading" secondItem="hVy-Y7-002" secondAttribute="leading" constant="16" id="HSc-vs-8nJ"/>
-                            <constraint firstAttribute="trailing" secondItem="Pfh-Bw-Dd1" secondAttribute="trailing" constant="16" id="Wq9-Je-mJq"/>
+                            <constraint firstAttribute="trailing" secondItem="Pfh-Bw-Dd1" secondAttribute="trailing" constant="16" id="Wq9-Je-mJq">
+                                <variation key="heightClass=compact-widthClass=regular" constant="59"/>
+                            </constraint>
                             <constraint firstItem="hVy-Y7-002" firstAttribute="trailing" secondItem="b1l-WY-FU7" secondAttribute="trailing" constant="16" id="XSn-Y1-vwf"/>
-                            <constraint firstItem="hVy-Y7-002" firstAttribute="bottom" secondItem="b1l-WY-FU7" secondAttribute="bottom" constant="123" id="ixh-Ld-zRy"/>
+                            <constraint firstItem="hVy-Y7-002" firstAttribute="bottom" secondItem="b1l-WY-FU7" secondAttribute="bottom" constant="123" id="ixh-Ld-zRy">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="16"/>
+                            </constraint>
                             <constraint firstItem="BA0-Ey-BLq" firstAttribute="leading" secondItem="hVy-Y7-002" secondAttribute="leading" constant="16" id="rhP-C9-3sN"/>
                             <constraint firstItem="BA0-Ey-BLq" firstAttribute="top" secondItem="hVy-Y7-002" secondAttribute="top" constant="16" id="zN1-vN-QoU"/>
                         </constraints>
@@ -223,6 +222,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

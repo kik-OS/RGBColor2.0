@@ -5,6 +5,8 @@
 //  Created by Никита Гвоздиков on 31.10.2020.
 //
 
+//Алексей, попробовал сделать все через массивы, наверно здесь лучше надо было делать через отдельные аутлеты, но я решил попробовать.
+
 import UIKit
 
 class ChangerColorViewController: UIViewController {
@@ -25,6 +27,10 @@ class ChangerColorViewController: UIViewController {
         super.viewDidLoad()
         showValueOnOutlets()
         initializationBeforeOpen()
+        
+        for textFild in textFildsOutlet {
+            textFild.delegate = self
+        }
     }
     
     @IBAction func slidersAction(_ sender: UISlider) {
@@ -35,21 +41,11 @@ class ChangerColorViewController: UIViewController {
         changeColorOnView()
     }
     
-    @IBAction func textFieldsAction(_ sender: UITextField) {
-        changeCurrentIndex(slider: nil, textField: sender)
-        arrayOfColors[index] = Float(sender.text!) ?? 0.0
-        changeValueAfterTextFieldAction(textField: sender)
-        showValueOnOutlets()
-        changeColorOnView()
-    }
-    
-    
     @IBAction func doneButtonPressed() {
         delegate.changeBackground(arrayWithColors: arrayOfColors)
         dismiss(animated: true)
     }
 }
-
 
 //MARK - Extension
 extension ChangerColorViewController: UITextFieldDelegate {
@@ -62,17 +58,10 @@ extension ChangerColorViewController: UITextFieldDelegate {
             guard let textField = textField else { return }
             index = textFildsOutlet.firstIndex(of: textField) ?? 0
         }
-   
     }
-    
     
     func changeValueAfterSliderAction(slider: UISlider) {
         arrayOfColors[index] = slider.value
-    }
-    
-    func changeValueAfterTextFieldAction(textField: UITextField) {
-        guard let value = textField.text else { return }
-        arrayOfColors[index] = Float(value) ?? 0.0
     }
     
     func showValueOnOutlets() {
@@ -100,12 +89,21 @@ extension ChangerColorViewController: UITextFieldDelegate {
     
     //MARK - Text Field Delegate
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-            super .touchesBegan(touches, with: event)
-                view.endEditing(true)
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true);
-        return false;
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        changeCurrentIndex(slider: nil, textField: textField)
+        arrayOfColors[index] = Float(textField.text!) ?? 0.0
+        showValueOnOutlets()
+        changeColorOnView()
     }
 }
+
+
