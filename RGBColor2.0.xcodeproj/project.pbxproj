@@ -14,7 +14,6 @@
 		E4B603CE254D564400F444FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B603CD254D564400F444FE /* Assets.xcassets */; };
 		E4B603D1254D564400F444FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B603CF254D564400F444FE /* LaunchScreen.storyboard */; };
 		E4B603DB254D5ED000F444FE /* ChangerColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B603DA254D5ED000F444FE /* ChangerColorViewController.swift */; };
-		E4B603DF254D600700F444FE /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B603DE254D600700F444FE /* ColorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		E4B603D0254D564400F444FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4B603D2254D564400F444FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B603DA254D5ED000F444FE /* ChangerColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangerColorViewController.swift; sourceTree = "<group>"; };
-		E4B603DE254D600700F444FE /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				E4B603CF254D564400F444FE /* LaunchScreen.storyboard */,
 				E4B603D2254D564400F444FE /* Info.plist */,
 				E4B603DA254D5ED000F444FE /* ChangerColorViewController.swift */,
-				E4B603DE254D600700F444FE /* ColorType.swift */,
 			);
 			path = RGBColor2.0;
 			sourceTree = "<group>";
@@ -144,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B603C9254D563F00F444FE /* MainViewController.swift in Sources */,
-				E4B603DF254D600700F444FE /* ColorType.swift in Sources */,
 				E4B603C5254D563F00F444FE /* AppDelegate.swift in Sources */,
 				E4B603DB254D5ED000F444FE /* ChangerColorViewController.swift in Sources */,
 				E4B603C7254D563F00F444FE /* SceneDelegate.swift in Sources */,
